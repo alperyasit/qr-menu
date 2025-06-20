@@ -51,4 +51,53 @@
     justify-content: space-between;
     align-items: flex-end;
   }
+
+  .social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    border-left: 5px solid #6c757d;
+
+    i {
+      font-size: 1.5rem;
+      color: #495057;
+      cursor: pointer;
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: #007bff;
+      }
+
+      &.bi-github:hover {
+        color: #333;
+      }
+
+      &.bi-instagram:hover {
+        color: #e4405f;
+      }
+
+      &.bi-facebook:hover {
+        color: #1877f2;
+      }
+
+      &.bi-twitter:hover {
+        color: #1da1f2;
+      }
+
+      &.bi-linkedin:hover {
+        color: #0077b5;
+      }
+
+      &.bi-youtube:hover {
+        color: #ff0000;
+      }
+
+      &.bi-tiktok:hover {
+        color: #000000;
+      }
+    }
+  }
 }

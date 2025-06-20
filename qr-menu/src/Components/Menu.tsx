@@ -32,6 +32,15 @@ export default function Menu() {
           )}
         </button>
       </div>
+      <div className="social-media">
+        <i className="bi-github"></i>
+        <i className="bi bi-instagram"></i>
+        <i className="bi bi-facebook"></i>
+        <i className="bi bi-twitter"></i>
+        <i className="bi bi-linkedin"></i>
+        <i className="bi bi-youtube"></i>
+        <i className="bi bi-tiktok"></i>
+      </div>
       <div className="cold-drinks">
         <button onClick={() => toggleCategory("cold")}>
           Cold Drinks
@@ -76,6 +85,7 @@ export default function Menu() {
           )}
         </button>
       </div>
+
       <div className="desserts">
         <button onClick={() => toggleCategory("dessert")}>
           Desserts
