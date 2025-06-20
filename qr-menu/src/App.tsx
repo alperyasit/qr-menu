@@ -1,17 +1,18 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.scss";
 import "./Components/Menu.scss";
+import "./Components/Contact.scss";
 import Menu from "./Components/Menu";
-import SLinks from "./Components/SLinks";
+import Contact from "./Components/Contact";
 import Qrcode from "./Components/Qrcode";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/qrcode" element={<Qrcode />} />
+        <Route path="/" element={<Qrcode />} />
         <Route path="/menu" element={<Menu />} />
-        <Route path="/s-links" element={<SLinks />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
   );

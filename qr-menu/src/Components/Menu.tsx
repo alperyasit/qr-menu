@@ -1,3 +1,4 @@
+import { Button } from "@mui/material";
 import { useState } from "react";
 
 export default function Menu() {
@@ -32,15 +33,7 @@ export default function Menu() {
           )}
         </button>
       </div>
-      <div className="social-media">
-        <i className="bi-github"></i>
-        <i className="bi bi-instagram"></i>
-        <i className="bi bi-facebook"></i>
-        <i className="bi bi-twitter"></i>
-        <i className="bi bi-linkedin"></i>
-        <i className="bi bi-youtube"></i>
-        <i className="bi bi-tiktok"></i>
-      </div>
+
       <div className="cold-drinks">
         <button onClick={() => toggleCategory("cold")}>
           Cold Drinks
@@ -64,6 +57,7 @@ export default function Menu() {
           )}
         </button>
       </div>
+
       <div className="food">
         <button onClick={() => toggleCategory("food")}>
           Food
@@ -106,6 +100,42 @@ export default function Menu() {
             </div>
           )}
         </button>
+      </div>
+
+      <div className="social-media">
+        <button onClick={() => toggleCategory("social-media")}>
+          Social Media
+          {openCategory === "social-media" && (
+            <div id="social-items-container">
+              <a
+                href="https://github.com/alperyasit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="bi bi-github"></i>
+              </a>
+              <a
+                href="https://instagram.com/1aalperr"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="bi bi-instagram"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alperyastt/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="bi bi-linkedin"></i>
+              </a>
+            </div>
+          )}
+        </button>
+      </div>
+      <div className="suggestions">
+        <Button variant="contained" href="/contact">
+          Your Suggestions For Us
+        </Button>
       </div>
     </div>
   );
