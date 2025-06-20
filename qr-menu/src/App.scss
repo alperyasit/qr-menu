@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: none;
+  position: relative;
+  height: 100vh;
+  #root {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url("./assets/bg-img.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: blur(3px);
+    transition: filter 0.5s ease;
+  }
+}
