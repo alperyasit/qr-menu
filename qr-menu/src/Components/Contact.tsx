@@ -8,7 +8,9 @@ function Contact() {
   return (
     <div className="form-container">
       <form action="mailto:alperyasit@gmail.com" method="post">
-        <label htmlFor={contactTextAreaId}>Write your message:</label>
+        <h3>
+          <label htmlFor={contactTextAreaId}>Write your message:</label>
+        </h3>
         <TextareaAutosize
           className="textarea"
           maxRows={6}
