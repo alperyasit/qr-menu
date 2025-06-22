@@ -11,7 +11,7 @@ function Qrcode() {
       <div className="button-container">
         <h3>Or Click The Button Below</h3>
         <Button variant="contained" href="/menu">
-          Use a button as a temporary option.{" "}
+          Use a button as a temporary option
         </Button>
       </div>
       <p style={{ fontWeight: "bold" }}>Scan to View Menu & Social Media</p>
