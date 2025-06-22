@@ -1,5 +1,6 @@
 import { Button } from "@mui/material";
 import { useState } from "react";
+import Footer from "./Footer";
 
 export default function Menu() {
   const [openCategory, setOpenCategory] = useState<string | null>(null);
@@ -137,6 +138,7 @@ export default function Menu() {
           Your Suggestions For Us
         </Button>
       </div>
+      <Footer />
     </div>
   );
 }

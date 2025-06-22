@@ -1,6 +1,7 @@
 import frame from "../assets/frame.png";
 import "../App.scss";
 import { Button } from "@mui/material";
+import Footer from "./Footer";
 
 function Qrcode() {
   return (
@@ -14,6 +15,7 @@ function Qrcode() {
         </Button>
       </div>
       <p style={{ fontWeight: "bold" }}>Scan to View Menu & Social Media</p>
+      <Footer />
     </div>
   );
 }

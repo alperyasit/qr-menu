@@ -2,6 +2,7 @@ import { useId } from "react";
 import "./Contact.scss";
 import { Button, TextareaAutosize } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
+import Footer from "./Footer";
 
 function Contact() {
   const contactTextAreaId = useId();
@@ -34,6 +35,7 @@ function Contact() {
           Back to Qr Code
         </Button>
       </div>
+      <Footer />
     </div>
   );
 }
